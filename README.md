@@ -24,16 +24,22 @@ Ou clicar em iniciar e procurar por Ubuntu e finalizar a instalação.
 ## Atualizar o Linux e instalar alguns pacotes
 #
 sudo apt update -y
+
 sudo apt upgrade -y
+
 sudo apt-get install git joe curl -y
+
 sudo apt-get install gcc g++ -y
 
 #
 ## Gerar chaves SSH >> no Linux <<
 #
 ssh-keygen -t rsa -b 4096 -C "usuario@dominio.com.br"
+
 git config --global user.email "usuario@dominio.com.br"
+
 git config --global user.name  "Nome Completo do Usuário"
+
 
 #
 ## Instalar o Git for Windows e depois copiar a chave ssh gerada >> no Linux <<
